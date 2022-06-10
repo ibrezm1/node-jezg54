@@ -11,16 +11,16 @@ test('first', 1000)
 
 const a = async () => {
   try {
-    let res1 = await test('don1', 2000);
-    test('don2', 5000, true)
+    let res1 = await test('don1', 2000); // Need data
+    test('don2', 5000, true) // can be async ex logging or SN call
       .then((txt) => {
         console.log('sucess');
       })
       .catch((err) => {
         console.log(err);
       });
-    let res3 = await test('don3', 2000);
-    let res4 = await test('don4', 2000);
+    let res3 = await test('don3', 2000); // need data in another call
+    let res4 = await test('don4', 2000); // need data in another call
   } catch (err) {
     console.log('err -- ' + err);
   }
