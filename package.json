@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "why-is-node-running": "^2.2.2",
+    "winston": "^3.7.2",
     "wtfnode": "^0.9.1"
   }
 }
